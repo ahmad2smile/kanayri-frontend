@@ -9,7 +9,7 @@ class DashboardComponent extends React.Component<IProps> {
 		const { classes } = this.props
 
 		return (
-			<div className={classes.container} style={{ height: 600 }}>
+			<div className={classes.container}>
 				<h1>Dashboard Page</h1>
 			</div>
 		)
