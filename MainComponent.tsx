@@ -1,7 +1,7 @@
 import React from "react"
 
-import DashboardComponent from "./Dashboard/DashboardComponent"
-import NavBarComponent from "./NavBarComponent/NavBarComponent"
+import DashboardComponent from "./screens/Dashboard/DashboardComponent"
+import NavBarComponent from "./screens/NavBarComponent/NavBarComponent"
 
 import { NavBar } from "./conduits/components"
 
