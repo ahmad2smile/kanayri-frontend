@@ -1,5 +1,6 @@
 import React from "react"
 import injectSheet from "react-jss"
+import { Link } from "react-router-dom"
 
 import { IProps } from "./__types/IProps"
 
@@ -9,8 +10,12 @@ const NavBarComponent = ({ classes }: IProps) => (
 	<div className={classes.container}>
 		<div className={classes.logo}>Orion</div>
 		<div className={classes.linksContainer}>
-			<div className={classes.item}>Home</div>
-			<div className={classes.item}>About</div>
+			<Link to="/">
+				<div className={classes.item}>Home</div>
+			</Link>
+			<Link to="/about">
+				<div className={classes.item}>About</div>
+			</Link>
 		</div>
 	</div>
 )

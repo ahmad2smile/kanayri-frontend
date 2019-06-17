@@ -1,14 +1,7 @@
 import React from "react"
 
-import DashboardComponent from "./screens/Dashboard/DashboardComponent"
-import NavBarComponent from "./screens/NavBarComponent/NavBarComponent"
+import MainRoute from "./routes/MainRoute"
 
-import { NavBar } from "./conduits/components"
-
-const MainComponent = () => (
-	<NavBar navItems={<NavBarComponent />}>
-		<DashboardComponent />
-	</NavBar>
-)
+const MainComponent = () => <MainRoute />
 
 export default MainComponent
