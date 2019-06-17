@@ -18,14 +18,26 @@ const MainRoute = ({ authToken }: IProps): JSX.Element => (
 		<React.Suspense fallback={<Loader />}>
 			<NavBar navItems={<NavBarComponent />}>
 				<Switch>
-					<PublicRoute exact path="/login" isUnAuth={!authToken} component={LoginRoute} />
+					<PublicRoute
+						exact
+						path="/login"
+						title="Login"
+						isUnAuth={!authToken}
+						component={LoginRoute}
+					/>
 					<AuthRoute
 						exact
 						path="/about"
+						title="About"
 						isAuth={!!authToken}
 						component={AboutComponent}
 					/>
-					<AuthRoute path="/" isAuth={!!authToken} component={DashboardComponent} />
+					<AuthRoute
+						path="/"
+						title="Orion - eShop"
+						isAuth={!!authToken}
+						component={DashboardComponent}
+					/>
 				</Switch>
 			</NavBar>
 		</React.Suspense>
