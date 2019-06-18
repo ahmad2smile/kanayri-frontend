@@ -1,7 +1,10 @@
 import * as React from "react"
 import useSheet from "react-jss"
 
+import { Container } from "../../conduits/components"
+
 import { IProps } from "./__types/IProps"
+
 import styles from "./styles"
 
 class DashboardComponent extends React.Component<IProps> {
@@ -9,9 +12,11 @@ class DashboardComponent extends React.Component<IProps> {
 		const { classes } = this.props
 
 		return (
-			<div className={classes.container}>
-				<h1>Dashboard Page</h1>
-			</div>
+			<Container>
+				<div className={classes.container}>
+					<h1 className={classes.header}>Dashboard Page</h1>
+				</div>
+			</Container>
 		)
 	}
 }

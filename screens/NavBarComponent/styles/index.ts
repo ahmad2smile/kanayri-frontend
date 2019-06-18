@@ -2,6 +2,7 @@ import { Styles } from "react-jss"
 
 export const styles: Styles = {
 	container: {
+		flexGrow: 1,
 		display: "flex",
 		padding: "0 10px",
 		height: "100%",
