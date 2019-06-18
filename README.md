@@ -1,4 +1,4 @@
-# Orion eCommerce Website
+# Kanayri eCommerce Website
 
 ## Description:
 
