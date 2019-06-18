@@ -1,1 +1,1 @@
-export { Sizes } from "../../../theme/"
+export { Sizes } from "../../../theme"
