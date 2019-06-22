@@ -1,11 +1,11 @@
 import * as React from "react"
-import useSheet from "react-jss"
+import injectSheet from "react-jss"
 
 import { Container } from "../../conduits/components"
 
 import { IProps } from "./__types/IProps"
 
-import styles from "./styles"
+import { styles } from "./styles"
 
 class DashboardComponent extends React.Component<IProps> {
 	public render() {
@@ -14,11 +14,12 @@ class DashboardComponent extends React.Component<IProps> {
 		return (
 			<Container>
 				<div className={classes.container}>
-					<h1 className={classes.header}>Dashboard Page</h1>
+					<h1 className={classes.header}>Kanayri is a shop with hand chosen exotic products.</h1>
+					<p className={classes.description}>We believe in helping brands create through strategy, story-telling, digital products, and integrated experiences on web, mobile, and in the world. And you're here, friends, because you also believe.</p>
 				</div>
 			</Container>
 		)
 	}
 }
 
-export default useSheet(styles)(DashboardComponent)
+export default injectSheet(styles)(DashboardComponent)

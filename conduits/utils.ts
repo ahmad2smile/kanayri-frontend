@@ -1,7 +1,7 @@
 export {
-	breakPointXSmall,
-	breakPointSmall,
-	breakPointMedium,
-	breakPointLarge,
-	breakPointXLarge
+	breakPointXSmallUp,
+	breakPointSmallUp,
+	breakPointMediumUp,
+	breakPointLargeUp,
+	breakPointXLargeUp
 } from "../../../utils/responsiveHelpers"
