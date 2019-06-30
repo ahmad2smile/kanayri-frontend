@@ -7,6 +7,7 @@ import { AuthRoute, PublicRoute, Loader, NavBar } from "../conduits/components"
 import NavBarComponent from "../screens/NavBarComponent/NavBarComponent"
 
 import { IProps } from "./__types/IProps"
+import { NavBarPosition } from "../conduits/models"
 
 const DashboardComponent = React.lazy(() => import("../screens/Dashboard/DashboardComponent"))
 const AboutComponent = React.lazy(() => import("../screens/About/AboutComponent"))
@@ -16,7 +17,7 @@ const LoginRoute = () => <div>WIP</div>
 const MainRoute = ({ authToken }: IProps): JSX.Element => (
 	<Router>
 		<React.Suspense fallback={<Loader />}>
-			<NavBar navItems={<NavBarComponent />}>
+			<NavBar position={NavBarPosition.Bottom} navItems={<NavBarComponent />}>
 				<Switch>
 					<PublicRoute
 						exact
@@ -34,7 +35,7 @@ const MainRoute = ({ authToken }: IProps): JSX.Element => (
 					/>
 					<AuthRoute
 						path="/"
-						title="Orion - eShop"
+						title="Kanayri - eShop"
 						isAuth={!!authToken}
 						component={DashboardComponent}
 					/>

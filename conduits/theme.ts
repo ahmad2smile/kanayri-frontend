@@ -1,1 +1,1 @@
-export { Sizes, Fonts } from "../../../theme"
+export { Sizes, Fonts, Colors } from "../../../theme"
