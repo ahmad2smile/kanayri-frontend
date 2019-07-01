@@ -1,6 +1,8 @@
 import * as React from "react"
 import injectSheet from "react-jss"
 
+import Products from "./Products/Products"
+
 import { Container } from "../../conduits/components"
 
 import { IProps } from "./__types/IProps"
@@ -12,12 +14,17 @@ class DashboardComponent extends React.Component<IProps> {
 		const { classes } = this.props
 
 		return (
-			<Container>
-				<div className={classes.container}>
-					<h1 className={classes.header}>Kanayri is a shop with hand chosen exotic products.</h1>
-					<p className={classes.description}>We believe in helping brands create through strategy, story-telling, digital products, and integrated experiences on web, mobile, and in the world. And you're here, friends, because you also believe.</p>
-				</div>
-			</Container>
+			<div className={classes.container}>
+				<Container>
+					<h1 className={classes.header}>Exotic eShop</h1>
+					<p className={classes.description}>
+						We don't sell on corporate scale but we sell the best
+					</p>
+				</Container>
+				<Container fullTablet>
+					<Products />
+				</Container>
+			</div>
 		)
 	}
 }

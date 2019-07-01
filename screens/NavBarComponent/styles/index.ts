@@ -1,5 +1,8 @@
 import { Styles } from "react-jss"
+
 import { Colors } from "../../../conduits/theme"
+
+import { breakPointMediumUp } from "../../../conduits/utils"
 
 export const styles: Styles = {
 	container: {
@@ -14,11 +17,16 @@ export const styles: Styles = {
 	},
 	linksContainer: {
 		display: "flex",
-		flexBasis: "60%",
+		flexBasis: "70%",
 		justifyContent: "space-around",
 		height: "100%",
 		backgroundColor: Colors.primary
 	},
+	...breakPointMediumUp({
+		linksContainer: {
+			flexBasis: "60%"
+		}
+	}),
 	item: {
 		padding: "0 10px"
 	}
