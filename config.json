@@ -1,0 +1,17 @@
+{
+    "sizes": {
+        "container": 1100
+    },
+    "theme": {
+        "primary": "#F5004F",
+        "secondary": "#475c7b"
+    },
+    "api": {
+        "production": {
+            "baseUrl": "http://localhost:3000"
+        },
+        "development": {
+            "baseUrl": "http://localhost:3000"
+        }
+    }
+}
